@@ -1,0 +1,149 @@
+* {
+
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(#f0f5ef,#d4d8d4);
+    font-family: "Source Sans 3", sans-serif;
+    color: #002d22;
+    overflow: hidden;
+     
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    box-shadow: none;
+
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;   
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 25px;
+    font-weight: 400   ;
+    margin-top: 0px;
+    line-height: 20pt;
+    
+    
+}
+
+input[type="email"], textarea {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #002d228a;
+    
+}
+
+input[type="email"], textarea:focus {
+   outline-color: rgba(128, 128, 128, 0.363);
+   outline-width: .60em;
+   outline-offset: .25em;
+   
+}
+
+input[type="submit"] {
+    
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #002d22;
+    color: #d4d8d4;
+    border: 2px solid #002d22;
+}
+
+input[type="submit"]:hover {
+    border: 2px solid #002d22;
+    background-color: transparent;
+    color: #002d22;
+}
+
+::placeholder {
+    font-family: "Source Sans 3", sans-serif;
+    color: #d4d8d4;
+    opacity: .6; 
+    font-size: 15pt;
+  }
+  input[type="text"] {
+    
+  }
+
+textarea {
+    height: 130px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 800px) {
+   
+body p{
+    font-size: 14pt;
+    margin-top: 0px;
+    line-height: 19px;
+}  
+
+
+body h1{
+    font-size: 19pt;
+    margin-bottom: 0px;
+    
+} 
+img {
+    margin-top: auto;
+}
+  }
+
+
+a {
+    text-decoration: none;
+    font-size: 19pt;
+    color: #002d22;
+    letter-spacing: 1.5px; 
+    font-weight: 700;
+}
+i {
+    vertical-align: middle;
+    font-size: 30pt;
+    padding-left: 7px;
+    
+}
+
+a:hover {
+    color: #002d228a;
+    
+
+}
