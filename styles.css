@@ -13,6 +13,7 @@ body {
 }
 
 .container {
+    animation: divam 1.5s ease-in forwards;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -33,7 +34,8 @@ body {
 img {
     max-width: 100%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 5px;
+    
 }
 
 h1 {
@@ -147,4 +149,14 @@ a:hover {
     color: #002d228a;
     
 
+}
+
+@keyframes divam {
+    from {
+            opacity: 0%;
+    }
+    to {
+            opacity: 100%;
+
+    }
 }
