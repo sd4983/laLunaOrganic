@@ -1,35 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Luna</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+ 
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>La Luna Market Garden</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/47b1704d81.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/47b1704d81.js" crossorigin="anonymous"></script>
+  
 </head>
-<body>
-    <div class="container">
-        <div class="content">
-            <img src="heading2.png" alt="laLunaheading">
-            <h1>Website coming soon!</h1>
-            <p>Feel free to reach out with a question or register your interest in our CSA program.</p>
-        <div class = 'form-container'>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="4f39bcb4-2363-43d0-bfc9-472f83264999">
-                
-                <input placeholder="your email address" type="email" id="email" name="email" required>
-                <textarea placeholder="Send us a message!" id="message" name="message" required></textarea>
-                <input type="submit" value="Say Hi!">
-            </form>
-            <a href="https://www.instagram.com/la_luna_organic/" target="_blank">follow us on <i class="fa-brands fa-instagram"></i>
-            </a>
+
+<!-- partial:index.partial.html -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<div class="wrapper">
+    <!-- NavBar  -->
+<div class="navbar" id="navbar">
+    <div class="navbar-container">
+        <a href="#intro"><img class='logo'  src="heading2 copy.png" max-width="150px" alt="logo"></a>
+        <ul class="links">
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#services">CSA</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
         </div>
+    </div>
+</div>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row1" >
+                <div class="col-lg-13">
+                    <img id='main-logo' src="heading2 copy.png" alt="logo">
+                    <h3>Market Garden • Bridgenorth, Tasmania</h3>
+                    <a class="btn btn-default page-scroll" href="#services">Join our CSA program!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            
+            
+                <div class="col-lg-12">
+                    <div class='introPic'><img src="bigH.jpeg" alt="" style="height: 80vh;"></div>
+                    <div class='introText'><h1>About Us</h1>
+                        <hr>
+                        <p>La Luna at its heart is an expression of our passion for all things nature. We are a 10 acre farm with a mix of bushland and pasture with 2 acres of market garden at its centre growing a diverse range of veggies, fruits and flowers. Using organic principles we aim to feed the community a seasonal variety of nutrient dense produce whilst building back the land and its ecosystems. We are a small team who love what we do and appreciate being able to do it in such a beautiful part of the world.
+                        </p>
+                        
+                    </div>
+                    <div class='introPicSmall'><img src="bigHSmall.jpeg" alt="farmer" ></div>
+                    
+                    
+                    
+                </div>
+               
+            
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            
+                <div class="col-lg-124">
+                    <div class="csa-text">
+                    <h1>Community Supported <br>Agriculture</h1>
+                    <hr>
+                    <p>Community Supported Agriculture (CSA) is a collaborative farming model that fosters a direct connection 
+                        between consumers and local farms. In a CSA program, individuals or families purchase "shares" of a farm's harvest,
+                         acknowledging the sometimes unpredictable nature of small-scale organic growing. Throughout the season, members receive 
+                         a portion of the farm's produce weekly or fortnightly. This mutually beneficial arrangement not only provides members with 
+                         fresh, seasonal, and organic produce, but also supports local farmers by providing them with financial stability and a 
+                         guaranteed market for their crops. Additionally, CSAs promote sustainable agriculture practices, strengthen community ties,
+                          and encourage a deeper understanding of where our food comes from.</p>
+                    
+                    </div>
+                    <div class="veggies"><img src="veggiesn.jpeg" alt="veggie box" >
+                        <div class="overlay"><a href="">shop our <br> veggie boxes here!</a></div>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            
+                <div class="col-lg-12">
+                    
+                    <div class="contactDiv">
+                        <div class="contact-text-container">
+                            <h1>Contact Us</h1>
+                        
+                        <p>We are always looking to connect with like-minded folk,
+                            Feel free to reach out with a question or register your interest in our CSA program.
+                        </p>
+                        
+                        <a href="https://www.instagram.com/la_luna_organic/" target="_blank">follow us on <i class="fa-brands fa-instagram"></i>
+                        </a>
+                       
+                        </div>
+                    </div>
+                        <div class = 'form-container'>
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="a9a83dd6-5647-449a-b7b1-47b35903d942">
+                                
+                                <input placeholder="your email address" type="email" id="email" name="email" required>
+                                <textarea placeholder="Send us a message!" id="message" name="message" required></textarea>
+                                <input type="submit" value="Say Hi!">
+                            </form>
+                            
+                        </div>
+                       
+                    
+                    
+                </div>
+                
+                          
+        
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+        <div class="footer-content" align="center">
+            <div class="left-foot">
+                <img src="heading3 copy.png" alt="footer-img">
+                <p>
+                495 South Bridgenorth rd<br>
+                +6143775432<br>
+                </p>
+                <hr>
+                <p class="akgn">Our farm stands on palawa land, and we honor their timeless connection to this place. We are committed to respecting the history, culture, and contributions of the palawa people, and supporting reconciliation through our actions</p>
+                <a href="https://www.instagram.com/la_luna_organic/" id='footer-link' target="_blank">follow us on <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            
             
         </div>
     </div>
+    </footer>
+    <script  src='./script.js'></script>
+</body>
+<!-- partial -->
+
+</div>
 </body>
 </html>
