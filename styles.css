@@ -1,164 +1,611 @@
+
 * {
-
-    box-sizing: border-box;
-}
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
 
 body {
-    background: linear-gradient(#f0f5ef,#d4d8d4);
-    font-family: "Source Sans 3", sans-serif;
-    color: #002d22;
-    overflow: hidden;
-     
+  
+  background: linear-gradient(#f0f5ef,#d4d8d4);
+  width: 100%;
+  height: 100%;
+  font-family: "Karla", sans-serif;
+  
 }
 
-.container {
-    animation: divam 1.5s ease-in forwards;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100vh;
-    box-shadow: none;
-
-}
-
-.content {
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 500px;
-    width: 100%;
-
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
 }
 
 h1 {
-    font-size: 2rem;
-    letter-spacing: 2px;   
-    margin-bottom: 5px;
-    margin-top: 5px;
+  font-family: "Karla", "Sans-serif";
+  font-size: 33pt;
+  font-weight: 700;
+  
 }
 
-p {
-    font-size: 25px;
-    font-weight: 400   ;
-    margin-top: 0px;
-    line-height: 22pt;
-    margin-bottom: 0px;
+h3 {
+text-shadow: black;
+font-family: "Karla", "Sans-serif";
+font-size: 20pt;
+text-shadow: black;
 
-    
-    
+
 }
 
-input[type="email"], textarea {
-    width: 100%;
-    padding: 20px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: #002d228a;
-    
+.logo {
+  float: left;
+  max-width: 120px;
+  
+}
+.logo:hover {
+  scale: 1.04;
+  transition: 0.15s;
 }
 
-input[type="email"], textarea:focus {
-   outline-color: rgba(128, 128, 128, 0.363);
-   outline-width: .60em;
-   outline-offset: .25em;
-   
+li {
+  list-style: none;
+
 }
-
-input[type="submit"] {
-    
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 500;
-    font-size: 15pt;
-    width: 100%;
-    padding: 20px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: #002d22;
-    color: #d4d8d4;
-    border: 2px solid #002d22;
-}
-
-input[type="submit"]:hover {
-    border: 2px solid #002d22;
-    background-color: transparent;
-    color: #002d22;
-}
-
-::placeholder {
-    font-family: "Source Sans 3", sans-serif;
-    color: #d4d8d4;
-    opacity: .6; 
-    font-size: 15pt;
-  }
-  input[type="text"] {
-    
-  }
-
-textarea {
-    height: 130px;
-}
-
-form {
-    margin-bottom: 30px;
-}
-
-
-@media screen and (max-width: 800px) {
-   
-body p{
-    font-size: 14pt;
-    margin-top: 0px;
-    line-height: 19px;
-}  
-
-
-body h1{
-    font-size: 19pt;
-    margin-bottom: 0px;
-    
-} 
-img {
-    margin-top: auto;
-}
-  }
-
 
 a {
-    text-decoration: none;
-    font-size: 19pt;
-    color: #002d22;
-    letter-spacing: 1.5px; 
-    font-weight: 700;
-}
-i {
-    vertical-align: middle;
-    font-size: 30pt;
-    padding-left: 7px;
-    
+  text-decoration: none;
+  font-weight: bold;
+  color: #002d22;
+  font-size: 1.5rem;
+  
 }
 
 a:hover {
-    color: #002d228a;
+  
+  text-decoration: underline;
+  scale: 1.04;
+  transition: 0.15s;
+  
+}
+
+
+
+
+
+.navbar {
+  position: fixed;
+  background-color: #d4d8d4;
+  width: 100%;
+  height: 60px;
+  align-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  z-index: 1000;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #002d22;
+    font-size: 1.5rem;
+    
+  }
+  
+  a:hover {
+    transition: 0.2s ease-in-out;
+    color:  orange;
+    text-decoration: overline;
+    
+  }
+}
+
+.navbar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.navbar-wrap {
+width: 100%;
+position: relative;
+background-color: #d4d8d4;
+z-index: 1000;
+}
+
+.navbar.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+  float: right;
+}
+
+
+
+.navbar .toggle_btn {
+  color: #002d22;
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+p {
+  
+  font-size: 12pt;
+  font-family: "Karla", sans-serif;
+  
+  
+}
+
+hr {
+  max-width: 20px;
+  
+
+}
+
+
+
+
+
+@keyframes fade-in {
+ 
+  to {scale: 1; opacity: 1;}
+}
+
+
+
+
+.intro-section {
+  height: 100vh;
+  text-align: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.438), #002d22d8 ), url("heFarm-010_original.jpg");
+  background-repeat: no-repeat;
+  color: #eee;
+
+  h3, img, .btn {
+  scale: .9; opacity: 0;
+  animation: fade-in linear .75s forwards;
+  }
+
+
+}
+
+
+
+
+.about-section {
+  overflow: hidden;
+  height: 100vh;
+  text-align: left;
+  background: linear-gradient(#002d22,#001d16);
+
+  .introPicSmall {
+    display: none;
+  }
+
+}
+
+.col-lg-12 {
+  display: flex;          /* Enables Flexbox layout */
+  justify-content: space-evenly; /* Centers horizontally */
+  align-items: center;     /* Centers vertically (optional) */
+  min-height: 100vh;       /* Ensures body fills the full viewport height */
+  padding: 0;  
+  color: white;
+  width: 100%;
+  
+  hr {
+    max-width: 20px;
+    margin: 40px 0px;
+  
+  }
+}
+
+
+
+.introText {
+  max-width: 500px;
+}
+
+
+
+
+.col-lg-13 {
+  display: flex;          /* Enables Flexbox layout */
+  flex-direction: column;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically (optional) */
+  min-height: 100vh;       /* Ensures body fills the full viewport height */
+  margin: 0;  
+  color: white;
+}
+
+.col-lg-124 {
+  width: 100%;
+  display: flex;          /* Enables Flexbox layout */
+  text-align: left;
+  justify-content: space-around; /* Centers horizontally */
+  align-items: center;     /* Centers vertically (optional) */
+  min-height: 100vh;       /* Ensures body fills the full viewport height */
+    
+  hr {
+    max-width: 20px;
+    margin: 50px 0px;
+    color: black;
+    border: 1px solid black;
+  
+
+    padding: 0 ;
+   
+  }
+
+
+  .veggies {
+    position: relative;
+    overflow: hidden;
+    max-height: 90vh;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    
+   
+    
+  }
+
+  .overlay {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    a {
+      color: white;
+      font-size: 30pt;
+     
+    }
+
+    
+  }
+}
+
+
+
+.csa-text {
+  max-width: 500px;
+}
+
+.services-section {
+  height: 100vh;
+  text-align: center;
+  background: #fff;
+  
+ 
+}
+.contact-section {
+
+  overflow: hidden;
+  background: linear-gradient(#f0f5ef,#d4d8d4);
+  text-align: center;
+
+  
+  h1 {
+    
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #002d22;
+    
+    
+  }
+  p {
+    
+    color: #002d22;
+    margin-bottom: 20px;
+    font-size: 18pt;
+    
+    
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 32pt;
+    color: #002d22;
+    
+    font-family: "Karla";
+}
+
+.contactDiv {
+  
+  width: 400px;
+  text-align: center;
+  hr {
+    max-width: 20px;
+    margin: 40px 0px;
+    color: #002d22;
+    border: 1px solid #002d22;
+  
+
+    padding: 0 ;
+   
+  }
+}
+
+}
+
+form {
+  
+  max-width: 450px;
+  min-width: 300px;
+  margin: 1.5em auto;
+  padding: 0;
+  
+}
+
+input[type="email"], textarea {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #002d228a;
+  
+}
+
+input[type="email"], textarea:focus {
+ outline-color: rgba(128, 128, 128, 0.363);
+ outline-width: .60em;
+ outline-offset: .25em;
+ 
+}
+
+input[type="submit"] {
+  
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 500;
+  font-size: 15pt;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #002d22;
+  color: #d4d8d4;
+  border: 2px solid #002d22;
+}
+
+input[type="submit"]:hover {
+  border: 2px solid #002d22;
+  background-color: transparent;
+  color: #002d22;
+}
+
+::placeholder {
+  font-family: "Source Sans 3", sans-serif;
+  color: #d4d8d4;
+  opacity: .6; 
+  font-size: 15pt;
+}
+
+
+textarea {
+  height: 130px;
+}
+
+.left-foot > p {
+  font-size: 10pt;
+}
+
+
+
+
+.btn {
+  
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 500;
+  font-size: 15pt;
+  
+  padding: 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #002d22;
+  color: #d4d8d4;
+  border: 2px solid #002d22;
+}
+
+.btn:hover {
+  border: 2px solid #002d22;
+  background-color: transparent;
+  color: #002d22;
+}
+
+/* Styles for the footer */
+footer {
+
+  width: 100%; /* Ensures the footer takes full width within the section */
+  height: 40vh;
+  padding: 20px 0; /* Adds vertical padding */
+  background-color: #002d22;
+  display: flex; /* Use Flexbox on the footer */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;
+  text-decoration: none;
+  
+}
+
+
+.footer-content {
+  
+  color: white;
+  align-items: center;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20pt;
+  text-decoration: none;
+}
+
+.footer-content img {
+  max-width: 120px; /* Restricts the image size */
+  margin-bottom: 5px; /* Adds some space below the image */
+}
+
+.footer-content > p {
+  text-decoration: none;
+  font-size: 45pt;
+  color: white;
+  
+}
+
+.akgn {
+  max-width: 700px;
+}
+
+
+
+
+
+@media (max-width: 767px) {
+
+
+  p {
+    font-size: 12pt;
+    
+  }
+
+  .intro-section { 
+
+  height: 100%;
+  width: 100%;
+  }
+
+
+ 
+  .introPic {
+    display: none;
+  }
+
+  .col-lg-12 {
+    flex-direction: column;
+    
+    
+  }
+
+
+
+  .col-lg-124 {
+    flex-direction: column;
+    justify-content: space-evenly;
+    img {
+      transform: rotate(90deg)
+    }
+    .veggies {
+      max-height: 20vh;
+     max-width: none;
+      
+    }
+  }
+
+  .about-section {
+    .introPicSmall {
+      display: block;
+    }
+  }
+
+  .contact-section {
+    a, hr {
+      display: none;
+    }
+
+    p {
+      font-size: 16pt;
+    }
+    .col-lg-12 {
+      justify-content: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0;
+    }
+
+    .contactDiv {
+      text-align: center;
+    }
     
 
-}
+  }
 
-@keyframes divam {
-    from {
-            opacity: 0%;
+  .footer-content {
+    a {
+      color: white;
+      font-size: 3rem;
+      margin: 0;
     }
-    to {
-            opacity: 100%;
+    text-align: center;
+    
+    
+    
+  }
 
-    }
 }
+ 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+.container {
+  max-width: 1100px;
+  padding: 0;
+  overflow: hidden;
+}
+  
+@media (max-width: 480px) {
+  #main-logo {
+    max-width: 90vw;
+  }
+
+ 
+  .col-lg-12, .col-lg-124 {
+    
+    padding: 16px;
+    .introPicSmall {
+      max-width: calc(100vw - 32px);
+    }
+    
+  }
+
+  .footer-content {
+    padding: 16px;
+
+
+  }
+
+  a {
+    padding-top: 50px;
+  }
+ 
+}
