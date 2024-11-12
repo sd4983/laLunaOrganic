@@ -162,7 +162,7 @@ hr {
 
 
 .intro-section {
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   background-image: linear-gradient(rgba(255, 255, 255, 0.438), #002d22d8 ), url("heFarm-010_original.jpg");
   background-repeat: no-repeat;
@@ -286,7 +286,7 @@ hr {
 }
 
 .services-section {
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   background: #fff;
   
@@ -433,7 +433,7 @@ textarea {
 footer {
 
   width: 100%; /* Ensures the footer takes full width within the section */
-  height: 40vh;
+  min-height: 40vh;
   padding: 20px 0; /* Adds vertical padding */
   background-color: #002d22;
   display: flex; /* Use Flexbox on the footer */
@@ -467,6 +467,10 @@ footer {
   
 }
 
+#footer-link {
+  display: none;
+}
+
 .akgn {
   max-width: 700px;
 }
@@ -479,7 +483,7 @@ footer {
 
 
   p {
-    font-size: 12pt;
+    font-size: 10pt;
     
   }
 
@@ -501,7 +505,10 @@ footer {
     
   }
 
-
+.left-foot > hr {
+  margin: auto;
+  
+}
 
   .col-lg-124 {
     flex-direction: column;
@@ -528,10 +535,12 @@ footer {
     }
 
     p {
-      font-size: 16pt;
+      font-size: 12pt;
+      max-width: ;
     }
     .col-lg-12 {
       justify-content: center;
+      
     }
 
     form {
@@ -551,10 +560,17 @@ footer {
       color: white;
       font-size: 3rem;
       margin: 0;
+      
     }
     text-align: center;
     
-    
+  .akgn {
+    margin-top: 10px;
+  }
+
+  #footer-link {
+    display: block;
+  }
     
   }
 
@@ -584,6 +600,9 @@ footer {
 }
   
 @media (max-width: 480px) {
+
+
+
   #main-logo {
     max-width: 90vw;
   }
@@ -591,10 +610,9 @@ footer {
  
   .col-lg-12, .col-lg-124 {
     
+    overflow: hidden;
     padding: 16px;
-    .introPicSmall {
-      max-width: calc(100vw - 32px);
-    }
+   
     
   }
 
