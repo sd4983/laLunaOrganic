@@ -605,20 +605,20 @@ footer {
 
   #main-logo {
     max-width: 350px;
-    padding: 20px;
+    padding: 32px;
   }
 
  
   .col-lg-12, .col-lg-124 {
     
-    overflow: hidden;
-    padding: 40px;
+    
+    padding: 32px;
    
     
   }
 
   .footer-content {
-    padding: 16px;
+    padding: 32px;
 
 
   }
