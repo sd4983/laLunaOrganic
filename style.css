@@ -605,13 +605,14 @@ footer {
 
   #main-logo {
     max-width: 80vw;
+    padding: 20px;
   }
 
  
   .col-lg-12, .col-lg-124 {
     
     overflow: hidden;
-    padding: 16px;
+    padding: 40px;
    
     
   }
