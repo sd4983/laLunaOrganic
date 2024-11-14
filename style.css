@@ -626,14 +626,21 @@ footer {
 
 
   #main-logo {
-    max-width: 90vw;
+    max-width: 80vw;
+  }
+  
+  .col-lg-13 {
+    padding: 24px;
   }
 
+  h3 {
+    padding: 30px 10px;
+  }
  
   .col-lg-12, .col-lg-124 {
     
     overflow: hidden;
-    padding: 16px;
+    padding: 24px;
    
     
   }
