@@ -517,8 +517,18 @@ footer {
 
   .col-lg-12 {
     flex-direction: column;
+    justify-content: space-evenly;
     
     
+  }
+
+  .col-lg-13 {
+    padding: 20px;
+    
+    
+  }
+  .gap {
+    display: none;
   }
 
 .left-foot > hr {
