@@ -21,3 +21,22 @@ window.addEventListener('scroll', function() {
         }
     }
 });
+
+
+const responsiveMenuButton = document.getElementById('responsiveMenuButton');
+const navBarLinks = document.querySelector('.navbar-links');
+
+    responsiveMenuButton.addEventListener('click', () => {
+        navBarLinks.classList.toggle('open');
+        responsiveMenuButton.classList.toggle('open');  
+    });
+
+    const allNavLinks = document.querySelectorAll('.navbar-links');
+        allNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navBarLinks.classList.remove('open');
+                responsiveMenuButton.classList.remove('open');
+                hideNavbarFlag = false; 
+                
+            })
+        });

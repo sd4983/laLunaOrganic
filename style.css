@@ -86,7 +86,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: #002d22;
-  font-size: 1.5rem;
+  font-size: 1rem;
   
 }
 
@@ -95,6 +95,7 @@ a:hover {
   text-decoration: underline;
   scale: 1.04;
   transition: 0.15s;
+  
   
 }
 
@@ -513,6 +514,25 @@ footer {
   .navbar-links {
     display: none;
   }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links.open {
+    display: block;
+    
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+    
+  
+  } 
+
+
 
   h3 {
     font-size: .95rem;
