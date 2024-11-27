@@ -261,12 +261,13 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+
      
     
    
     
   }
-
+ 
   .overlay {
     position: absolute;
     background: rgb(0, 0, 0);
@@ -278,10 +279,28 @@ hr {
     text-align: center;
     a {
       color: white;
-      font-size: 30pt;
+      font-size: 15pt;
      
     }
 
+    h3 {
+      font-size: 3.5rem;
+      
+    }
+
+
+
+    
+  }
+
+  .signupBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 25%;
+    justify-self: center;
+    
     
   }
 }
@@ -290,6 +309,7 @@ hr {
 
 .csa-text {
   max-width: 500px;
+  
 }
 
 .services-section {
@@ -329,7 +349,10 @@ hr {
     color: #002d22;
     
     font-family: "Karla";
+  
 }
+
+
 
 .contactDiv {
   
@@ -584,6 +607,11 @@ footer {
   .col-lg-124 {
     flex-direction: column;
     justify-content: space-evenly;
+
+    .overlay {
+      align-content: unset;
+    }
+
     img {
       transform: rotate(90deg)
     }
@@ -591,7 +619,31 @@ footer {
       max-height: 20vh;
      max-width: 100vw;
       
+      
     }
+
+   
+
+    .overlay h3 {
+      
+      font-size: 2rem;
+      padding: 25px;
+      
+    }
+
+    .signupBtn {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      align-items: center;
+      
+      
+     
+      
+    }
+    
+    
   }
 
   .about-section {
@@ -690,8 +742,14 @@ footer {
     
     
     padding: 10%;
+    
    
     
+  }
+
+  .btn {
+    padding: 10px 5px;
+   
   }
 
   .footer-content {
