@@ -298,7 +298,7 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
-    height: 25%;
+    height: 30%;
     justify-self: center;
     
     
@@ -665,7 +665,7 @@ footer {
 
     p {
       font-size: 12pt;
-      max-width: ;
+      
     }
     .col-lg-12 {
       justify-content: center;
