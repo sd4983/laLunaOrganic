@@ -256,7 +256,7 @@ hr {
   .veggies {
     position: relative;
     overflow: hidden;
-    max-height: 80vh;
+    max-height: 75vh;
     max-width: 400px;
     display: flex;
     justify-content: center;
@@ -298,7 +298,7 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
-    height: 30%;
+    height: 33%;
     justify-self: center;
     
     
