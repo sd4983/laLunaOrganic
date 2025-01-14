@@ -586,6 +586,12 @@ footer {
   .col-lg-12 {
     flex-direction: column;
     justify-content: space-evenly;
+    hr {
+      
+      margin: 30px 0px;
+    
+    }
+
     
     
   }
@@ -616,7 +622,7 @@ footer {
       transform: rotate(90deg)
     }
     .veggies {
-      max-height: 20vh;
+      max-height: 25vh;
      max-width: 100vw;
       
       
