@@ -755,7 +755,7 @@ footer {
     background-image: linear-gradient(rgba(255, 255, 255, 0.438), #002d22d8 ), url("backSML.jpeg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 120%;
     color: #eee;
   
   .col-lg-13 {
