@@ -31,7 +31,7 @@ text-shadow: black;
 font-family: "Karla", "Sans-serif";
 font-size: 20pt;
 text-shadow: black;
-padding: 30px;
+padding: 20px;
 
 
 }
@@ -171,8 +171,10 @@ hr {
 .intro-section {
   min-height: 100vh;
   text-align: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.438), #002d22d8 ), url("heFarm-010_original.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.438), #002d22d8 ), url("IMG_3968.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 175%;
   color: #eee;
 
   h3, img, .btn {
@@ -256,10 +258,10 @@ hr {
   .veggies {
     position: relative;
     overflow: hidden;
-    max-height: 75vh;
+    max-height: 65vh;
     max-width: 400px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
      
@@ -277,6 +279,8 @@ hr {
     height: 100%;
     align-content: center;
     text-align: center;
+    display: grid;
+    
     a {
       color: white;
       font-size: 15pt;
@@ -298,7 +302,7 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
-    height: 33%;
+    
     justify-self: center;
     
     
@@ -558,8 +562,8 @@ footer {
 
 
   h3 {
-    font-size: .95rem;
-    padding: 20px 0px;
+    font-size: 1.15rem;
+    
   }
 
   p {
@@ -622,18 +626,24 @@ footer {
       transform: rotate(90deg)
     }
     .veggies {
-      max-height: 25vh;
+     max-height: 30vh;
      max-width: 100vw;
       
       
     }
 
-   
+   .overlay {
+    height: 30vh;
+    display: grid;
+    
+   }
 
     .overlay h3 {
       
-      font-size: 2rem;
-      padding: 25px;
+      font-size: 2.8rem;
+      
+    padding-bottom: 0px;
+      
       
     }
 
@@ -643,6 +653,9 @@ footer {
       justify-content: space-evenly;
       width: 100%;
       align-items: center;
+      height: auto;
+      padding-bottom: 30px;
+
       
       
      
@@ -736,7 +749,14 @@ footer {
   }
 
 
- 
+  .intro-section {
+    min-height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.438), #002d22d8 ), url("backSML.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: #eee;
   
   .col-lg-13 {
     padding: 10%;
@@ -757,6 +777,7 @@ footer {
     padding: 10px 5px;
    
   }
+ 
 
   .footer-content {
     padding: 16px;
