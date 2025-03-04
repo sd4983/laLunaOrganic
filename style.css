@@ -613,13 +613,18 @@ footer {
   margin: auto;
   
 }
+.introPicSmall {
+  max-width: 80vw;
+  overflow: hidden;
+}
 
   .col-lg-124 {
     flex-direction: column;
     justify-content: space-evenly;
 
     .overlay {
-      align-content: unset;
+      justify-content: space-evenly;
+      
     }
 
     img {
@@ -627,7 +632,7 @@ footer {
     }
     .veggies {
      max-height: 30vh;
-     max-width: 100vw;
+     max-width: 80vw;
       
       
     }
@@ -642,7 +647,7 @@ footer {
       
       font-size: 2.8rem;
       
-    padding-bottom: 0px;
+    padding-bottom: 20px;
       
       
     }
@@ -744,10 +749,18 @@ footer {
   
 @media (max-width: 520px) {
 
+
+
   .navbar-container .ul #links {
     display: none;
   }
 
+  
+  .container {
+    max-width: 80vw;
+    justify-self: center;
+    
+  }
 
   .intro-section {
     min-height: 100vh;
@@ -772,6 +785,8 @@ footer {
    
     
   }
+
+
 
   .signupBtn .btn {
     padding: 10px 5px;
